@@ -5,6 +5,6 @@
 ## Installation
 * run `yarn install` on the root of the project
 ## Development
-* run `yarn run dev` on the root of the project and this will start dev server.
+* run `npm run dev` on the root of the project and this will start dev server.
 * open http://localhost:3000 in any available browser (Opera, Chrome, Firefox, Safari).
 * Make change and save file. All changes will be reflected in browser immediately.
