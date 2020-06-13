@@ -2,9 +2,9 @@ const feedback = ({ feedback }) => {
   return (
     <>
       <div className="feedback-wrapper">
-        <div className="info-name-data">
+        <div className="info-name-date">
           <span className="name">{feedback.name}</span>
-          <span className="data">{feedback.datе}</span>
+          <span className="date">{feedback.date}</span>
         </div>
         <div className="main-content-feedback">{feedback.textOfFeedback}</div>
       </div>
@@ -12,7 +12,7 @@ const feedback = ({ feedback }) => {
         .feedback-wrapper {
           margin-bottom: 30px;
         }
-        .info-name-data {
+        .info-name-date {
           display: flex;
           align-items: flex-end;
           margin-bottom: 20px;
@@ -22,7 +22,7 @@ const feedback = ({ feedback }) => {
           font-size: 20px;
           font-weight: 600;
         }
-        .data {
+        .date {
           font-size: 16px;
           color: #808080;
         }
@@ -62,7 +62,7 @@ const feedback = ({ feedback }) => {
           .name {
             font-size: 18px;
           }
-          .data {
+          .date {
             font-size: 14px;
           }
           .main-content-feedback {
@@ -74,7 +74,7 @@ const feedback = ({ feedback }) => {
           .name {
             font-size: 16px;
           }
-          .data {
+          .date {
             font-size: 12px;
           }
           .main-content-feedback {
@@ -86,7 +86,7 @@ const feedback = ({ feedback }) => {
           .name {
             font-size: 14px;
           }
-          .data {
+          .date {
             font-size: 10px;
           }
           .main-content-feedback {
@@ -94,7 +94,7 @@ const feedback = ({ feedback }) => {
             line-height: 19px;
             padding: 13px 15px 15px 20px;
           }
-          .info-name-data {
+          .info-name-date {
             margin-bottom: 11px;
           }
           .main-content-feedback:before {
