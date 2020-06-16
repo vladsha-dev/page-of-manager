@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import AllDataAboutUser from "../data/mainInfoUser";
 import GeneralInfOfUser from "../components/generalInfOfUser";
 import FeedbacksTabs from "../components/feedbacksTabs";
 import Form from "../components/form";
@@ -19,7 +18,7 @@ const Home = ({ notes }) => {
       </Head>
       <div className="main-container">
         <div className="section-general-inf-user">
-          <GeneralInfOfUser dataOfUser={AllDataAboutUser} />
+          <GeneralInfOfUser />
         </div>
         <div className="section-feedbacks">
           <FeedbacksTabs feedbacksContent={notes} />
