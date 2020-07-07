@@ -21,7 +21,7 @@ const Home = ({ notes }) => {
           <GeneralInfOfUser />
         </div>
         <div className="section-feedbacks">
-          <FeedbacksTabs feedbacksContent={notes} />
+          {/* <FeedbacksTabs feedbacksContent={notes} /> */}
         </div>
       </div>
       <div className="form-container">
@@ -66,10 +66,10 @@ const Home = ({ notes }) => {
     </>
   );
 };
-Home.getInitialProps = async () => {
-  const res = await fetch("http://localhost:3000/api/notes");
-  const { data } = await res.json();
-  return { notes: data };
-};
+// Home.getInitialProps = async () => {
+//   const res = await fetch("http://localhost:3000/api/notes");
+//   const { data } = await res.json();
+//   return { notes: data };
+// };
 
 export default Home;
