@@ -66,7 +66,7 @@ const Home = ({ notes }) => {
     </>
   );
 };
-Home.getStaticProps = async () => {
+Home.getInitialProps = async () => {
   const res = await fetch(
     "http://https://page-of-managerrrr.vercel.app/api/notes"
   );
