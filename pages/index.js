@@ -67,9 +67,7 @@ const Home = ({ notes }) => {
   );
 };
 Home.getInitialProps = async () => {
-  const res = await fetch(
-    "https://page-of-managerrrr.vercel.app/api/notes"
-  );
+  const res = await fetch("https://page-of-manager.vercel.app/api/notes");
   const { data } = await res.json();
   return { notes: data };
 };

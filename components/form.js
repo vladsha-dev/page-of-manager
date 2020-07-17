@@ -30,34 +30,31 @@ const form = () => {
   });
   const sendFeedback = async () => {
     try {
-      const res = await fetch(
-        "https://page-of-managerrrr.vercel.app/api/notes",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...form,
-            date: new Date()
-              .toLocaleString("ru", {
-                day: "numeric",
-                month: "long",
-                year: "numeric",
-              })
-              .replace(/\s*г\./, ""),
-            timeInMilliseconds: Date.UTC(
-              new Date().getFullYear(),
-              new Date().getMonth() + 1,
-              new Date().getDate(),
-              0,
-              0,
-              0
-            ),
-          }),
-        }
-      );
+      const res = await fetch("https://page-of-manager.vercel.app/api/notes", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...form,
+          date: new Date()
+            .toLocaleString("ru", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })
+            .replace(/\s*г\./, ""),
+          timeInMilliseconds: Date.UTC(
+            new Date().getFullYear(),
+            new Date().getMonth() + 1,
+            new Date().getDate(),
+            0,
+            0,
+            0
+          ),
+        }),
+      });
     } catch (error) {
       console.log(error);
     }
